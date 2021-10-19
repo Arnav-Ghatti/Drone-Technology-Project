@@ -59,12 +59,6 @@ h4 {
     color: rgb(238, 69, 120);
 }
 
-.bodySection {
-    text-align: center;
-    line-height: 1.5;
-    margin-top: 100px;
-}
-
 ul li {
     list-style-type: none;
     display: inline-block;
@@ -103,7 +97,7 @@ ul li .specialNavBarItem:hover {
     -webkit-text-fill-color: transparent;
 }
 
-/* Header, Navbar and Landing Page styling */
+/* Header */
 
 header {
     padding: 20px;
@@ -120,90 +114,38 @@ header .bg {
     object-fit: cover;
 }
 
-header #navBar {
-    margin: 10px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header #navBar .logo {
-    max-width: 100px;
-}
-
 header #landingPageContent {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 300px;
 }
 
 header #landingPageContent .subTitle {
     font-size: 1.6rem;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
-}
-
-header #landingPageContent .credits {
-    margin-top: 20px;
-    font-style: italic;
-    line-height: 1.5;
-}
-
-/* About Me, More on Drones and Contact Me styling */
-
-main h3 {
-    margin-bottom: 10px;
-}
-
-main .bodySection p.des {
-    display: inline-block;
-    width: 55%;
-}
-
-main #moreOnDrones .cardContainer {
-    margin-top: 25px;
-}
-
-@media(min-width:1000px) {
-    main #moreOnDrones .cardContainer {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media(max-width:1000px) {
-    main #moreOnDrones .cardContainer {
-        margin: 0 50px;
-    }
-}
-
-main #moreOnDrones .cardContainer .card {
-    flex-basis: 30%;
-    margin: 0 15px;
-    border-radius: 30px;
-    padding-bottom: 20px;
-}
-
-main #moreOnDrones .cardContainer .card p {
-    width: 80%;
+    width: 60%;
     margin: auto;
 }
 
-main #moreOnDrones .cardContainer .card a {
+/* Main */
+main {
+    text-align: center;
+    width: 75%;
+    margin: 50px auto;
+}
+main p {
+    text-align: justify;
+    line-height: 1.5;
     margin-top: 20px;
 }
-
-main #moreOnDrones .cardContainer .card .image img {
-    width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+main .section {
+    margin: 100px 0;
 }
 
-main #moreOnDrones .cardContainer .card .description {
-    margin: 10px 0;
+/* Footer */
+footer {
+    text-align: center;
 }
-
-/* Footer section and Contact me */
-
 footer #contactMe p {
     display: inline-block;
     width: 40%;
