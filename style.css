@@ -4,19 +4,27 @@
     padding: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 1.1rem;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #f8f8f8;
-}
-
-a:hover {
-    color: #000;
-    letter-spacing: 0.5px;
+    background-color: rgb(245, 245, 245);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.2rem;
 }
 
 .buttonLink {
@@ -32,7 +40,67 @@ h1, h2, h3, h4, h5, h6 {
 
 .buttonLink:hover {
     color: #fff;
+    letter-spacing: 0.5px;
     background-color: rgb(238, 69, 120);
+}
+
+.socialMediaDiv {
+    margin-top: 40px;
+}
+
+.socialMediaDiv .socialMedia {
+    margin: 0 40px;
+    font-size: 1.5rem;
+    color: #000;
+    transition: all .3s;
+}
+
+.socialMediaDiv .socialMedia:hover {
+    color: rgb(238, 69, 120);
+}
+
+.bodySection {
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 100px;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 50px;
+    font-weight: 400;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    transition: all .3s;
+}
+
+ul li a:hover {
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.5px;
+}
+
+ul li .specialNavBarItem {
+    color: rgb(240, 240, 240);
+    background-color: rgb(82, 72, 226);
+    padding: 15px 20px;
+    border-radius: 100px;
+    transition: all .3s;
+}
+
+ul li .specialNavBarItem:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(238, 69, 120);
+}
+
+.specialText {
+    font-weight: 700;
+    background: -webkit-linear-gradient(left, rgb(82, 72, 226), rgb(238, 69, 120));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Header, Navbar and Landing Page styling */
@@ -63,40 +131,9 @@ header #navBar .logo {
     min-width: 120px;
 }
 
-header #navBar ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 50px;
-    font-weight: 400;
-}
-
-header #navBar ul li a {
-    text-decoration: none;
-    color: #333;
-    transition: all .3s;
-}
-
-header #navBar ul li .specialNavBarItem {
-    color: #f0f0f0;
-    background-color: rgb(82, 72, 226);
-    padding: 15px 20px;
-    border-radius: 100px;
-    transition: all .3s;
-}
-
-header #navBar ul li .specialNavBarItem:hover {
-    color: #fff;
-    background-color: rgb(238, 69, 120);
-}
-
 header #landingPageContent {
     text-align: center;
     margin-top: 150px;
-}
-
-header #landingPageContent h1 {
-    font-size: 5rem;
-    font-family: "Montserrat", sans-serif;
 }
 
 header #landingPageContent .subTitle {
@@ -111,45 +148,74 @@ header #landingPageContent .credits {
     line-height: 1.5;
 }
 
-header #landingPageContent .socialMediaDiv {
-    margin-top: 40px;
-}
-
-header #landingPageContent .socialMediaDiv .socialMedia {
-    margin: 0 40px;
-    font-size: 1.5rem;
-    color: #000;
-    transition: all .3s;
-}
-
-header #landingPageContent .socialMediaDiv .socialMedia:hover {
-    color: rgb(238, 69, 120);
-}
-
 /* About Me, More on Drones and Contact Me styling */
 
-main .bodySection {
-    margin-top: 100px;
-}
-
-main .bodySection {
-    text-align: center;
-    line-height: 1.5;
-}
-
 main h3 {
-    font-size: 2rem;
     margin-bottom: 10px;
 }
 
-main .bodySection p {
+main .bodySection p.des {
     display: inline-block;
     width: 55%;
 }
 
-main #aboutMe .specialText {
-    font-weight: 700;
-    background: -webkit-linear-gradient(left, rgb(82, 72, 226), rgb(238, 69, 120));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+main #moreOnDrones .cardContainer {
+    margin-top: 25px;
+}
+
+@media(min-width:1000px) {
+    main #moreOnDrones .cardContainer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width:1000px) {
+    main #moreOnDrones .cardContainer {
+        margin: 0 50px;
+    }
+}
+
+main #moreOnDrones .cardContainer .card {
+    flex-basis: 30%;
+    margin: 0 15px;
+    border-radius: 30px;
+    padding-bottom: 20px;
+}
+
+main #moreOnDrones .cardContainer .card p {
+    width: 80%;
+    margin: auto;
+}
+
+main #moreOnDrones .cardContainer .card a {
+    margin-top: 20px;
+}
+
+main #moreOnDrones .cardContainer .card .image img {
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+main #moreOnDrones .cardContainer .card .description {
+    margin: 10px 0;
+}
+
+/* Footer section and Contact me */
+
+footer #contactMe p {
+    display: inline-block;
+    width: 40%;
+    margin-top: 10px;
+}
+
+footer #contactMe .footerNavBar {
+    background-color: rgb(20, 20, 20);
+    margin-top: 50px;
+    padding: 100px 0;
+}
+
+footer #contactMe .footerNavBar a {
+    color: rgb(255, 255, 255);
 }
